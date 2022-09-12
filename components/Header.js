@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import styles from '../styles/Header.module.css';
-export const Header = () => {
+export default function Header() {
   return (
     <header className={styles.header}>
       <div>
@@ -20,7 +20,7 @@ export const Header = () => {
               <a>Events</a>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link href='/Add'>
               <a>Add</a>
             </Link>
@@ -29,9 +29,9 @@ export const Header = () => {
             <Link href='/about'>
               <a>About</a>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
   );
-};
+}
